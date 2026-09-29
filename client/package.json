@@ -3,7 +3,7 @@
   "private": true,
   "description": "React and TypeScript frontend for discovering and tracking musical and theater productions and performances.",
   "author": "Kevin Spinks",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

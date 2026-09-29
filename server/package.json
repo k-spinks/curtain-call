@@ -3,10 +3,10 @@
   "private": true,
   "description": "REST API for tracking musical and theater productions, performances, and user activity.",
   "author": "Kevin Spinks",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch --env-file=../.env src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
