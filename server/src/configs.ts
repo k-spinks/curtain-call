@@ -6,4 +6,6 @@ export const configs = {
   POSTGRES_DB: process.env.POSTGRES_DB,
   POSTGRES_USER: process.env.POSTGRES_USER,
   POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+  AUTH0_DOMAIN: process.env.AUTH0_DOMAIN,
+  AUTH0_AUDIENCE: process.env.AUTH0_AUDIENCE,
 };

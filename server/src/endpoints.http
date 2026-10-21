@@ -1,1 +1,12 @@
 GET http://localhost:3000/
+
+### No Authorization header at all
+GET http://localhost:3000/token
+
+### Fake token
+GET http://localhost:3000/token
+Authorization: Bearer notarealtoken
+
+### Wrong scheme (not Bearer)
+GET http://localhost:3000/token
+Authorization: Basic abc123
