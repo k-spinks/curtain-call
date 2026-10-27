@@ -1,7 +1,6 @@
 // builds and exports the Hono app
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
-import { authMiddleware } from './middleware/index.js';
 import { app as usersRoute } from './routes/users.js';
 
 // Creates new instance of a server

@@ -1,0 +1,20 @@
+GET http://localhost:3000/
+
+### No Authorization header at all
+GET http://localhost:3000/token
+
+### Fake token
+GET http://localhost:3000/token
+Authorization: Bearer notarealtoken
+
+### Wrong scheme (not Bearer)
+GET http://localhost:3000/token
+Authorization: Basic abc123
+
+### Ticketmaster api US
+@apiKey = {{$dotenv TICKETMASTER_API_KEY}}
+
+GET https://app.ticketmaster.com/discovery/v2/events.json?keyword=Six&classificationName=Arts%20%26%20Theatre&city=Miwaukee&countryCode=US&stateCode=&apikey={{apiKey}}
+
+### Ticketmaster api Global
+GET https://app.ticketmaster.com/discovery/v2/events.json?keyword=mj&classificationName=Arts%20%26%20Theatre&countryCode=US&apikey={{apiKey}}
