@@ -10,5 +10,6 @@ export async function seed(knex: Knex): Promise<void> {
     { name: 'Broadway' },
     { name: 'West End' },
     { name: 'Touring' },
+    { name: 'Other' },
   ]);
 }
